@@ -1,2 +1,5 @@
-# next-ts-bang
-nextjs, typescript, reactjs
+# Getting Start
+
+## Environment
+
+I

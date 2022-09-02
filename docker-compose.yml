@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app:
+    container_name: dev_nextjs_bang_app
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./frontend/src:/var/www
+    ports:
+      - "8888:8888"
+    networks:
+      - dev_nextjs_bang_network
+
+networks:
+  dev_nextjs_bang_network:
+    external: true
